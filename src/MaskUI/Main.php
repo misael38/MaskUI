@@ -46,35 +46,35 @@ class Main extends PluginBase implements Listener {
                         break;
                     case 1:
                     $sender->sendMessage("§eMaskUI§7>> §aYour Mask Has Been Changed To §fSkeleton!");
-                    $sender->getInventory()->clearAll();
+                    $sender->getArmorInventory()->clearAll();
 					$sender->getArmorInventory()->clearAll();
 	                $sender->getArmorInventory()->setHelmet(Item::get(397, 0, 1));
 	                $sender->addTitle("§6You Received", "§fSkeleton §eMask");
 						break;
 					case 2:
 					$sender->sendMessage("§eMaskUI§7>> §aYour Mask Has Been Changed To §0Wither Skeleton!");
-                    $sender->getInventory()->clearAll();
+                    $sender->getArmorInventory()->clearAll();
 					$sender->getArmorInventory()->clearAll();
 	                $sender->getArmorInventory()->setHelmet(Item::get(397, 1, 1));
 	                $sender->addTitle("§6You Received", "§0Wither Skeleton §eMask");
 						break;
 					case 3:
 					$sender->sendMessage("§eMaskUI§7>> §aYour Mask Has Been Changed To §2Zombie!");
-                    $sender->getInventory()->clearAll();
+                    $sender->getArmorInventory()->clearAll();
 					$sender->getArmorInventory()->clearAll();
 	                $sender->getArmorInventory()->setHelmet(Item::get(397, 2, 1));
 	                $sender->addTitle("§6You Received", "§2Zombie §eMask");
 					    break;
 					case 4:
 					$sender->sendMessage("§eMaskUI§7>> §aYour Mask Has Been Changed To Creeper!");
-                    $sender->getInventory()->clearAll();
+                    $sender->getArmorInventory()->clearAll();
 					$sender->getArmorInventory()->clearAll();
 	                $sender->getArmorInventory()->setHelmet(Item::get(397, 4, 1));
 	                $sender->addTitle("§6You Received", "§aCreeper §eMask");
 					    break;
 					case 5:
 					$sender->sendMessage("§eMaskUI§7>> §6Your Mask Has Been Changed To §4Dragon!");
-                    $sender->getInventory()->clearAll();
+                    $sender->getArmorInventory()->clearAll();
 					$sender->getArmorInventory()->clearAll();
 	                $sender->getArmorInventory()->setHelmet(Item::get(397, 5, 1));
 	                $sender->addTitle("§6You Received", "§4Dragon §eMask");
@@ -82,13 +82,18 @@ class Main extends PluginBase implements Listener {
             }
         });
         $form->setTitle("§l§eMask §fMenu");
-        $form->setContent("§7Please Select Your Favorite §eMask \n§7Note: Clear your inventory before choosing a §eMask \n§7Plugin By: §dMisael38");
-        $form->addButton("§l§bExit", 0);
-        $form->addButton("§l§fSkeleton", 1);
-        $form->addButton("§l§0Wither Skeleton", 2);
-        $form->addButton("§l§2Zombie", 3);
-        $form->addButton("§l§aCreeper", 4);
-        $form->addButton("§l§4Dragon", 5);
+        $form->setContent("§7Please Select Your Favorite §eMask \n§7Note: Clear your §l§carmor§r before choosing a §eMask");
+        $form->addButton("§l§cExit", 0);
+        $form->addButton("§fSkeleton", 1);
+	$form->setContent("§aActivated");
+        $form->addButton("§0Wither Skeleton", 2);
+	$form->setContent("§aActivated");
+        $form->addButton("§2Zombie", 3);
+	$form->setContent("§aActivated");
+        $form->addButton("§aCreeper", 4);
+	$form->setContent("§aActivated");
+        $form->addButton("§4Dragon", 5);
+	$form->setContent("§aActivated");
         $form->sendToPlayer($sender);
         }
         return true;
