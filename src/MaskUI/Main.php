@@ -47,6 +47,10 @@ class Main extends PluginBase implements Listener {
 					$sender->getArmorInventory()->clearAll();
 	                $sender->getArmorInventory()->setHelmet(Item::get(397, 0, 1));
 	                $sender->addTitle("§6You Received", "§fSkeleton §eMask");
+                            if (!$sender->hasPermission("mask.skeleton")) {
+                                $sender->sendMessage($this->noperm);
+                                return true;
+                            }
 						break;
 					case 1:
 					$sender->sendMessage("§aYour Mask Has Been Changed To §0§lWither Skeleton!");
@@ -89,52 +93,6 @@ class Main extends PluginBase implements Listener {
         $form->sendToPlayer($sender);
         }
         return true;
-                    }
-                    $arg = array_shift($args);
-                    switch ($arg) {
-                        case "0":
-                            if (!$sender->hasPermission("mask.skeleton")) {
-                                $sender->sendMessage($this->noperm);
-                                return true;
-                            }
-                            $sender->sendMessage($this->prefix . "§r" . TextFormat::BLUE . "");
-                            return true;
-                        case "1":
-                            if (!$sender->hasPermission("mask.witherskeleton")) {
-                                $sender->sendMessage($this->noperm);
-                                return true;
-                            }
-                            $sender->sendMessage($this->prefix . "§r" . TextFormat::BLUE . "");
-                            return true;
-                        case "2":
-                            if (!$sender->hasPermission("mask.zombie")) {
-                                $sender->sendMessage($this->noperm);
-                                return true;
-                            }
-                            $sender->sendMessage($this->prefix . "§r" . TextFormat::BLUE . "");
-                            return true;
-                        case "3":
-                            if (!$sender->hasPermission("mask.creeper")) {
-                                $sender->sendMessage($this->noperm);
-                                return true;
-                            }
-                            $sender->sendMessage($this->prefix . "§r" . TextFormat::BLUE . "");
-                            return true;
-                        case "4":
-                            if (!$sender->hasPermission("mask.skeleton")) {
-                                $sender->sendMessage($this->noperm);
-                                return true;
-                            }
-                            $sender->sendMessage($this->prefix . "§r" . TextFormat::BLUE . "");
-                            return true;
-                        case "5":
-                            if (!$sender->hasPermission("mask.dragon")) {
-                                $sender->sendMessage($this->noperm);
-                                return true;
-                            }
-                            $sender->sendMessage($this->prefix . "§r" . TextFormat::BLUE . "");
-                            return true;
-				    
     }
 
     public function onDisable(){
