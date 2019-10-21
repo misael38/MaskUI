@@ -43,52 +43,47 @@ class Main extends PluginBase implements Listener {
             }
             switch ($result) {
                     case 0:
-                        break;
-                    case 1:
                     $sender->sendMessage("§eMaskUI§7>> §aYour Mask Has Been Changed To §fSkeleton!");
 					$sender->getArmorInventory()->clearAll();
 	                $sender->getArmorInventory()->setHelmet(Item::get(397, 0, 1));
 	                $sender->addTitle("§6You Received", "§fSkeleton §eMask");
 						break;
-					case 2:
+					case 1:
 					$sender->sendMessage("§eMaskUI§7>> §aYour Mask Has Been Changed To §0Wither Skeleton!");
 					$sender->getArmorInventory()->clearAll();
 	                $sender->getArmorInventory()->setHelmet(Item::get(397, 1, 1));
 	                $sender->addTitle("§6You Received", "§0Wither Skeleton §eMask");
 						break;
-					case 3:
+					case 2:
 					$sender->sendMessage("§eMaskUI§7>> §aYour Mask Has Been Changed To §2Zombie!");
 					$sender->getArmorInventory()->clearAll();
 	                $sender->getArmorInventory()->setHelmet(Item::get(397, 2, 1));
 	                $sender->addTitle("§6You Received", "§2Zombie §eMask");
 					    break;
-					case 4:
+					case 3:
 					$sender->sendMessage("§eMaskUI§7>> §aYour Mask Has Been Changed To Creeper!");
 					$sender->getArmorInventory()->clearAll();
 	                $sender->getArmorInventory()->setHelmet(Item::get(397, 4, 1));
 	                $sender->addTitle("§6You Received", "§aCreeper §eMask");
 					    break;
-					case 5:
+					case 4:
 					$sender->sendMessage("§eMaskUI§7>> §6Your Mask Has Been Changed To §4Dragon!");
 					$sender->getArmorInventory()->clearAll();
 	                $sender->getArmorInventory()->setHelmet(Item::get(397, 5, 1));
 	                $sender->addTitle("§6You Received", "§4Dragon §eMask");
 					    break;
+                    case 5:
+                        break;
             }
         });
-        $form->setTitle("§l§eMask §fMenu");
-        $form->setContent("§7Please Select Your Favorite §eMask \n§7Note: Clear your §l§carmor§r before choosing a §eMask");
-        $form->addButton("§l§cExit", 0);
-        $form->addButton("§fSkeleton", 1);
-	$form->setContent("§aActivated");
-        $form->addButton("§0Wither Skeleton", 2);
-	$form->setContent("§aActivated");
-        $form->addButton("§2Zombie", 3);
-	$form->setContent("§aActivated");
-        $form->addButton("§aCreeper", 4);
-	$form->setContent("§aActivated");
-        $form->addButton("§4Dragon", 5);
-	$form->setContent("§aActivated");
+        $form->setTitle("§l§eMasks");
+        $form->setContent("§7Please Select Your Favorite §eMask \n§7Note: Clear your §l§carmor§r before choosing a §eMask \n§b All FREE");
+        $form->addButton("§fSkeleton\n §l§aActivated", 0);
+        $form->addButton("§0Wither Skeleton\n §l§aActivated", 1);
+        $form->addButton("§2Zombie\n §l§aActivated", 2);
+        $form->addButton("§aCreeper\n §l§aActivated", 3);
+        $form->addButton("§4Dragon\n §l§aActivated", 4);
+	$form->addButton("§l§cExit", 5);
         $form->sendToPlayer($sender);
         }
         return true;
