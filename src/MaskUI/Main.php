@@ -47,35 +47,35 @@ class Main extends PluginBase implements Listener {
                     case 1:
                     $sender->sendMessage("§eMaskUI§7>> §aYour Mask Has Been Changed To §fSkeleton!");
                     $sender->getArmorInventory()->clearAll();
-					$sender->getArmorInventory()->clearAll();
+					$sender->getArmorInventory()->clearHelmet();
 	                $sender->getArmorInventory()->setHelmet(Item::get(397, 0, 1));
 	                $sender->addTitle("§6You Received", "§fSkeleton §eMask");
 						break;
 					case 2:
 					$sender->sendMessage("§eMaskUI§7>> §aYour Mask Has Been Changed To §0Wither Skeleton!");
                     $sender->getArmorInventory()->clearAll();
-					$sender->getArmorInventory()->clearAll();
+					$sender->getArmorInventory()->clearHelmet();
 	                $sender->getArmorInventory()->setHelmet(Item::get(397, 1, 1));
 	                $sender->addTitle("§6You Received", "§0Wither Skeleton §eMask");
 						break;
 					case 3:
 					$sender->sendMessage("§eMaskUI§7>> §aYour Mask Has Been Changed To §2Zombie!");
                     $sender->getArmorInventory()->clearAll();
-					$sender->getArmorInventory()->clearAll();
+					$sender->getArmorInventory()->clearHelmet();
 	                $sender->getArmorInventory()->setHelmet(Item::get(397, 2, 1));
 	                $sender->addTitle("§6You Received", "§2Zombie §eMask");
 					    break;
 					case 4:
 					$sender->sendMessage("§eMaskUI§7>> §aYour Mask Has Been Changed To Creeper!");
                     $sender->getArmorInventory()->clearAll();
-					$sender->getArmorInventory()->clearAll();
+					$sender->getArmorInventory()->clearHelmet();
 	                $sender->getArmorInventory()->setHelmet(Item::get(397, 4, 1));
 	                $sender->addTitle("§6You Received", "§aCreeper §eMask");
 					    break;
 					case 5:
 					$sender->sendMessage("§eMaskUI§7>> §6Your Mask Has Been Changed To §4Dragon!");
                     $sender->getArmorInventory()->clearAll();
-					$sender->getArmorInventory()->clearAll();
+					$sender->getArmorInventory()->clearHelmet();
 	                $sender->getArmorInventory()->setHelmet(Item::get(397, 5, 1));
 	                $sender->addTitle("§6You Received", "§4Dragon §eMask");
 					    break;
