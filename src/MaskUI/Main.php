@@ -35,17 +35,6 @@ class Main extends PluginBase implements Listener {
         if(!($sender instanceof Player)){
                 $sender->sendMessage("§7This command can't be used here. Sorry!");
                 return true;
-	}
-    public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
-        switch($cmd->getName()){                    
-            case "spawn":
-                if ($sender->hasPermission("maskui.command")){
-                     $this->Menu($sender);
-                }else{     
-                     $sender->sendMessage(TextFormat::RED . "You dont have permission §6§lYou can buy this command at §bhttps://mcpeprisonblock.buycraft.net/ !");
-                     return true;
-                }     
-            break;    
         }
         $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
         $form = $api->createSimpleForm(function (Player $sender, $data){
