@@ -1,0 +1,10 @@
+name: MaskUI
+version: 1.0.0
+main: MaskUI\Main
+api: [3.0.0, 3.9.1]
+author: Misael38
+Github: github.com/misael38
+
+commands:
+  mask:
+    description: "Open Mask Menu!"
