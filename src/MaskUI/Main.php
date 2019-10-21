@@ -47,10 +47,6 @@ class Main extends PluginBase implements Listener {
 					$sender->getArmorInventory()->clearAll();
 	                $sender->getArmorInventory()->setHelmet(Item::get(397, 0, 1));
 	                $sender->addTitle("§6You Received", "§fSkeleton §eMask");
-                            if (!$sender->hasPermission("mask.skeleton")) {
-                                $sender->sendMessage($this->noperm);
-                                return true;
-                            }
 						break;
 					case 1:
 					$sender->sendMessage("§aYour Mask Has Been Changed To §0§lWither Skeleton!");
