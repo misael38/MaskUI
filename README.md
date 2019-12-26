@@ -8,6 +8,8 @@
  - [x] Select mask with UI
  - [x] message when Select a Mask
  - [x] title when Select a Mask
+ - [x] Custome Message If Player Not In-Game 
+ - [x] Custome Message When Player Close The Menu
  
 # How To Setup?
 1. Download the latest plugin's phar [in here](https://poggit.pmmp.io/ci/misael38/MaskUI).
