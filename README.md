@@ -1,5 +1,5 @@
 # Plugin Info
- - Command : /mask
+ - Command : /maskmenu or /mm
  - Permission : -
  - Api : 3.x.x
  - Depend : FormAPI ([click here](https://poggit.pmmp.io/p/FormAPI) to download)
@@ -9,7 +9,7 @@
  - [x] Custome message when Select a Mask
  - [x] title when Select a Mask
  - [x] Custome Name
- - [ ] Custome Title
+ - [ ] Custome Title (COMING SOON)
  - [ ] Effect (COMING SOON)
  - [ ] Shop Form (COMING SOON)
  
