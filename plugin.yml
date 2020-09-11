@@ -1,0 +1,11 @@
+name: MaskUI
+version: 1.0.2
+main: MaskUI\Main
+api: [3.0.0]
+author: Misael38
+Github: https://github.com/misael38/MaskUI
+
+commands:
+  maskmenu:
+    description: "Selected Mask With UI Menu"
+    aliases: [mm]
