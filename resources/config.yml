@@ -1,0 +1,21 @@
+---
+#Use § For Color
+#use \n For A New Line
+
+#Message When Player it's not In-Game
+console-msg: "§7[§c!§7] §cThis command can't be used here. Sorry!"
+
+#Message when choosing the mask
+skeleton-msg : "§eMaskUI§7>> §aYour Mask Has Been Changed To §fSkeleton!"
+
+wither-msg : "§eMaskUI§7>> §aYour Mask Has Been Changed To §0Wither Skeleton!"
+
+zombie-msg : "§eMaskUI§7>> §aYour Mask Has Been Changed To §2Zombie!"
+
+creeper-msg : "§eMaskUI§7>> §aYour Mask Has Been Changed To Creeper!"
+
+dragon-msg : "§eMaskUI§7>> §6Your Mask Has Been Changed To §4Dragon!"
+
+#Message When Player Quit The Menu
+quit-msg: "§7[§c!§7] §eClosed Mask Menu..."
+...
